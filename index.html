@@ -12,9 +12,7 @@
 <h2> My Favourite place is New York</h2>
 
 <p1> New york is been my <b> Dream City</b> to live and settle in,I decided my <b>Favourite</b> place is </p1>
-</body>
 
-</html>
 
 
 <hr>
@@ -93,9 +91,32 @@
     <hr>
 
  <h1> CODE DISPLAY</h1>
+ <pr>
+     <blockquote><q>The remove() method of Queue Interface returns and removes the element at the front the container. 
+        It deletes the head of the container. The method throws an NoSuchElementException when the Queue is empty. </q></blockquote>
+ </pr>
+
+ <a href = "https://www.geeksforgeeks.org/queue-remove-method-in-java/#:~:text=The%20remove()%20method%20of,when%20the%20Queue%20is%20empty.&text=Returns%3A%20This%20method%20returns%20the%20head%20of%20the%20Queue.">Link for Referrence page</a>
+
+<pre>
+
+    if (s2.empty()) {
+        while (!s1.empty()) {
+            int element = s1.top().first;
+            s1.pop();
+            int minimum = s2.empty() ? element : min(element, s2.top().second);
+            s2.push({element, minimum});
+        }
+    }
+    int remove_element = s2.top().first;
+    s2.pop();
+</pre>
+
+</body>
+
+</html>
 
 
 
 
-
-
+ 
